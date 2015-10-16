@@ -14,7 +14,7 @@ function site_configuration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node/1';
+  $strongarm->value = 'node/2';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -28,14 +28,14 @@ function site_configuration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_slogan';
-  $strongarm->value = 'Reviews of Bad-Ass Books';
+  $strongarm->value = 'Bookie\'s Reviews of Bad-Ass Books ';
   $export['site_slogan'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'bartik';
+  $strongarm->value = 'business';
   $export['theme_default'] = $strongarm;
 
   return $export;
