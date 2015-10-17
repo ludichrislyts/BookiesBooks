@@ -1,0 +1,8 @@
+name = Admin Shortcuts
+description = an admin shortcuts with my most used links
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = shortcut
+features[features_api][] = api:2
+features[user_role][] = administrator
