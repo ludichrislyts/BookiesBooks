@@ -18,11 +18,11 @@ function book_review_field_default_field_instances() {
     'description' => 'What\'s this book about? Was it interesting? We wanna know!',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'text_plain',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -39,7 +39,7 @@ function book_review_field_default_field_instances() {
     'label' => 'Review',
     'required' => 1,
     'settings' => array(
-      'display_summary' => 1,
+      'display_summary' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -67,7 +67,7 @@ function book_review_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -79,12 +79,13 @@ function book_review_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_author',
     'label' => 'Author',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'size' => 60,
@@ -106,7 +107,7 @@ function book_review_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
